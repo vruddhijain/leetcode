@@ -1,19 +1,22 @@
+
 // class Solution {
 // public:
-//     vector<int> findErrorNums(vector<int>& nums) {
+//     std::vector<int> findErrorNums(std::vector<int>& nums) {
 //         sort(nums.begin(), nums.end());
 //         int n = nums.size();
 //         vector<int> res;
-
-//         for (int i = 1; i < n; ++i) {
-//             if (nums[i] == nums[i - 1]) {
+//         for(int i=0; i<n; i++){
+//             if(nums[i]!= i+1){
 //                 int x = nums[i];
 //                 res.push_back(x);
-//                 res.push_back(x + 1);
+//                 res.push_back(i+1);
+                
+                
+                
 //             }
 //         }
-
 //         return res;
+       
 //     }
 // };
 
